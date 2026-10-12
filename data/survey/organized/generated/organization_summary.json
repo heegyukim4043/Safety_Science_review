@@ -1,0 +1,43 @@
+{
+  "stage": "provisional_bibliographic_organization_not_human_screening",
+  "source_files": 56,
+  "raw_rows": 10858,
+  "provisional_unique_records": 6822,
+  "queue_records": 6592,
+  "search_log_rows": 42,
+  "searches_with_exports": 25,
+  "searches_without_exports": 17,
+  "searches_missing_run_datetime": 25,
+  "searches_missing_screen_hits": 23,
+  "priority_sources": 43,
+  "priority_matched_by_doi": 34,
+  "priority_not_matched_by_doi": 9,
+  "candidate_counts_by_rq_union_of_keyword_and_seed_hints": {
+    "RQ1": 5079,
+    "RQ2": 1105,
+    "RQ3": 1831,
+    "RQ4": 1944,
+    "RQ5": 905
+  },
+  "unassigned_candidate_records": 1015,
+  "records_with_multiple_rq_hints": 3237,
+  "missing_abstract_records": 3034,
+  "abstract_retrieval_tiers": {
+    "1_seed_source": 9,
+    "2_am_or_both_streams": 406,
+    "3_hrc_identifier_available": 2453,
+    "4_hrc_title_lookup": 166
+  },
+  "doi_conflict_groups": 5,
+  "input_sha256": {
+    "manifest": "c0c6935852cdb906d7df2f9fd28a23c07fa8fb4a7899e021acc668b574317f66",
+    "summary": "147e1fb14fc1bf18a48d1961c88336d9988e64a5845fa56e9ba314c82aacadfe",
+    "master": "091dcd0f6d5c73d260459c1c9b12e2ad2bd4c1061aa25a28a8c7a26b727d1353",
+    "hits": "8729e5b697992f0103cf52ff0870f75d80a4eccbf66d87c0038424d089186457",
+    "queue": "213be83f0f65c0c49ab4551c5e16bca16d729ef7c5145970ca5ca2c85941123e",
+    "conflicts": "ad844b51af0b660c7f2a74c7e5a8d1935b73fd8f3e619fc8548a2dea661fd6ad",
+    "search_log": "2ad6e50b299c6bf93b1d0c135f2a0aea3ae2ddba4e1c593685442c3a8e7e1f92",
+    "priority": "457484d7b8598a8b5dfbd89de1858d07972633b7f6f207882f206b460237e8d7",
+    "priority_coverage": "99d5b6479d8461eb3eae8d84c5375da2c453ad0ae98b49f986bcd7edee422886"
+  }
+}
