@@ -1,0 +1,2 @@
+xlrd==2.0.2
+bibtexparser==1.4.4
