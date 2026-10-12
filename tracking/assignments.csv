@@ -1,0 +1,11 @@
+role_id,role,scope,named_person,github_handle,start_date,backup_or_adjudicator,assignment_status
+PI,Principal investigator,Protocol and final approval,,,,,unassigned
+SEARCH,Search lead,All database queries and search provenance,,,,,unassigned
+DATA,Data steward,Source manifests IDs packets and QA,,,,,unassigned
+REV1,Independent reviewer 1,Full independent screening and core coding; descriptive extraction or verification; no framework-development role,,,,,unassigned
+REV2,Independent reviewer 2,Full independent screening and core coding; descriptive extraction or verification; no framework-development role,,,,,unassigned
+ADJ,Adjudicator,Unresolved disagreements and codebook governance; source lead authors Nam and Staley pending confirmation,,,,,unassigned
+RQ1_LEAD,Rq1 Lead,RQ1 exposure taxonomy and function-to-work-condition analysis,,,,,unassigned
+RQ2_LEAD,Rq2 Lead,RQ2 measurement analysis and integrated measurement-framework coordination,,,,,unassigned
+RQ3_LEAD,Rq3 Lead,Integrated RQ3a pathways and RQ3b worker OSH support and gaps,,,,,unassigned
+RQ4_LEAD,Rq4 Lead,Current RQ4 human control evaluation and separate future candidates,,,,,unassigned

@@ -1,0 +1,5 @@
+rq_version,rq,legacy_rqs,candidate_records_not_screened,with_abstract,without_abstract,legacy_overlap_removed,human_eligibility_decisions,agreed_rq_extractions,source_sha256
+four_rq_v0.2,RQ1,RQ1,5079,3198,1881,0,0,0,RQ1:89d183812a44b48fc3d6f39d70dc7b9cf6e5271cfaa369cd4dad471dc1751599
+four_rq_v0.2,RQ2,RQ2,1105,940,165,0,0,0,RQ2:a5d290b8a5d32aaf2aaab0dc315bceb3bfe4a7dea2ef2205036e264af280e8e0
+four_rq_v0.2,RQ3,RQ3;RQ4,2958,2325,633,817,0,0,RQ3:b40bc343a0fb3e519eb3f006eb27b86f468704329517e170cc96b6572dd630eb;RQ4:2e94d84373e381c42bb3632571b89f4338febb77ad1acec1cf0e7287a3799388
+four_rq_v0.2,RQ4,RQ5,905,837,68,0,0,0,RQ5:6d10a1db4ef8adb486efea73943dd67cc1b5c07a9067f96c273dd45a609a969a

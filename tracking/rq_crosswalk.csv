@@ -1,0 +1,6 @@
+rq_version,legacy_rq,current_rq,current_subdomain,legacy_workstream,current_workstream,change_type
+four_rq_v0.2,RQ1,RQ1,exposure,G12,G12,retained
+four_rq_v0.2,RQ2,RQ2,measurement,G12,G12,retained
+four_rq_v0.2,RQ3,RQ3,RQ3a pathways,G34,G3,merged
+four_rq_v0.2,RQ4,RQ3,RQ3b outcomes and empirical support,G34,G3,merged
+four_rq_v0.2,RQ5,RQ4,controls,G5,G4,renumbered
