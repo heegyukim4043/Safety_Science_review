@@ -211,9 +211,4 @@ The review is complete when:
 | [`templates/`](templates/) | Blank study registry, versioned RQ links, measurement framework, and reliability results |
 | [`scripts/`](scripts/) | Bundle audit, mixed training pool, random calibration, RQ-readiness summary, and upload checks |
 
-## Source of truth and upload boundary
-
-The original records and processing scripts remain in the parent workspace's survey folder. A byte-identical 90-file copy of the selected survey contents is at `data/survey_2026-10-12/`; this local `data/` folder is excluded from Git. The user will handle any upload separately. See [`docs/LOCAL_SURVEY_BUNDLE.md`](docs/LOCAL_SURVEY_BUNDLE.md) before giving reviewers working copies. If eligibility or search decisions change, update the signed protocol and amendment log first; do not edit source exports or overwrite independent reviewer decisions.
-
-The original DOCX and frozen survey snapshot retain their five-RQ numbering. Current documents/metadata use four RQs with a crosswalk; search queries and execution statuses are unchanged. This internal design comparison used scientific-agent procedural skills, disclosed and cited in the source-plan audit; it supplies no included-study decisions or review findings.
 
