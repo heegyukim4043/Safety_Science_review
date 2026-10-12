@@ -1,0 +1,10 @@
+role_id,role,scope,named_person,github_handle,start_date,backup_or_adjudicator,assignment_status
+PI,Principal investigator,Protocol and final approval,,,,,unassigned
+SEARCH,Search lead,All database queries and search provenance,,,,,unassigned
+DATA,Data steward,Source manifests IDs packets and QA,,,,,unassigned
+REV1,Independent reviewer 1,Entire shared queue and included-study extraction,,,,,unassigned
+REV2,Independent reviewer 2,Entire shared queue and included-study extraction,,,,,unassigned
+ADJ,Adjudicator,Screening conflicts duplicate conflicts and codebook changes,,,,,unassigned
+G12,G12 analytical lead,RQ1 and RQ2 function exposure and measurement,,,,,unassigned
+G34,G34 analytical lead,RQ3 and RQ4 pathways and OSH outcomes,,,,,unassigned
+G5,G5 analytical lead,RQ5 evaluated controls and follow-up experiments,,,,,unassigned

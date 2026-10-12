@@ -1,0 +1,38 @@
+# RQ workstreams and keyword allocation
+
+**Current structure:** `four_rq_v0.2`, 12 October 2026. RQ1 and RQ2 are retained; legacy RQ3/RQ4 are merged into current RQ3; legacy RQ5 becomes current RQ4. See the [source-plan comparison and evaluation](SOURCE_PLAN_COMPARISON_AND_RQ_REVISION.md) and [`../tracking/rq_crosswalk.csv`](../tracking/rq_crosswalk.csv). Current analytical workstreams are **G12, G3, and G4**.
+
+**Core question:** Which algorithmic functions change workers' actual work conditions, how are those conditions measured, through which pathways are they related to OSH outcomes, and which controls have been evaluated?
+
+Every stream uses the shared concept blocks: `"algorithmic management"`, `"algorithmic control"`, `"algorithmic scheduling"`, `"human-robot collaboration"`, `"human-robot interaction"`, and `"adaptive automation"` where supported by each database. The exact field tags, syntax, limits, and dates are in [`../tracking/search_log.csv`](../tracking/search_log.csv). A term listed below as **additional** is a proposal for a documented search amendment or a full-text coding prompt; it was **not an executed search** merely because it appears here.
+
+| Workstream | Questions and analytical owner | Distinct terms in exported queries | Exported search IDs most relevant to the stream | Additional terms: not yet searched as a dedicated expansion | Required handoff |
+|---|---|---|---|---|---|
+| **G12 — RQ1 and RQ2** | RQ1: which algorithmic decisions change what work condition? RQ2: how is exposure operationalized and over what unit/time window? | `task allocation`; `task assignment`; `work pacing`; `algorithmic scheduling`; `exposure`; `measur*`; `questionnaire`; `scale`; `log*`; `sensor*` | Common AM/HRC: `P1_AM`, `P3_HRC`, `S1_AM`, `S1B_AM_EXPAND`, `W1_AM`, `W3_HRC`, `I1_HRC`, `I2_ALLOC`, `I3_AM`, `A1_AM`, `A3_HRC`. Measurement: `P5_MEASURE`, `S5_MEASURE`, `W5_MEASURE`. | `monitoring`; `reassignment frequency`; `advance notice`; `pace variability`; `validation`; `reliability`; `recall period` | A study-level function → changed work condition → exposure unit/time window/measure/source table. Separate perceived exposure from event logs and experimental manipulations. |
+| **G3 — integrated RQ3** | Through which cognitive, psychosocial, ergonomic, physical-safety, or organizational pathways are exposures linked to worker OSH outcomes, with what empirical support, limitations, and gaps? RQ3a codes pathways; RQ3b codes outcomes/support. | `stress`; `fatigue`; `workload`; `ergonom*`; `psychosocial risk`; `health`; `safety`; `injur*`; `accident*`; `burnout`; `musculoskeletal` | OSH: `P2_OSH`, `S2_OSH`, `W2_OSH`. HRC with workload/worker terms: `P3_HRC`, `W3_HRC`, `I1_HRC`, `A3_HRC`. Also inspect common AM retrieval. | `autonomy`; `time pressure`; `goal conflict`; `cognitive load`; `physical load`; `near miss`; `sleep`; `incident`; `organizational pathway`; `dose response` | A linked exposure–pathway–outcome–design map with separate proposed/measured/tested mechanism and empirical-support fields. **No dedicated pathway query has been exported.** |
+| **G4 — RQ4 controls** | Which software/work-design controls have been empirically implemented or evaluated, at what level, and with what worker response or OSH outcomes? | `intervention*`; `redesign`; `participat*`; `consultation`; `transparency`; `contestab*`; `mitigation`; `explanation`; `human-in-the-loop` | `P6_CONTROL`, `S6_CONTROL`, `W6_CONTROL`, `I4_CONTROL`, `A2_CONTROL`, plus common AM/HRC retrieval. | `pace cap`; `reassignment limit`; `advance notice`; `worker override`; `human review`; `safety constraint` | Core human/lab/field control evaluation matrix; separate background proposal/technical-simulation ladder and later experimental candidates. Record comparison, fidelity, and actual worker outcomes. |
+
+**Search-ID prefixes:** `P` PubMed, `S` Scopus, `W` Web of Science, `I` IEEE Xplore, `A` ACM Digital Library. Review-identification searches `P4_REVIEW`, `S4_REVIEW`, and `W4_REVIEW` support the adjacent-review comparison; they are not added to counts of primary studies. `S3_HRC` has a planned query but no export in the current corpus.
+
+## How to divide work without losing studies
+
+1. The information specialist owns syntax and completeness checks across **all** five databases. A workstream lead checks whether the concepts and known sentinel papers for their RQs are covered, then proposes any amendment to the PI.
+2. Reviewer 1 and Reviewer 2 independently screen **all 6,592** records under one shared eligibility protocol. A record lacking an RQ keyword hint is still screened. Search hits and RQ-hint lists may overlap.
+3. On included studies, core interpretive fields are independently double-coded; descriptive fields are extracted once and source-verified by the second reviewer. Preserve source locations and pre-consensus codes. The named adjudication role resolves disagreement. G12, G3, and G4 analyze the agreed extraction and develop the final framework.
+4. A study can contribute to multiple streams. Use `study_id` for denominators, `report_id` for multiple reports, and `record_id` for search and screening provenance. Never sum the three workstream candidate totals as if they were distinct studies.
+
+Current **unscreened** keyword/seed candidate hints are RQ1 **5,079**; RQ2 **1,105**; integrated RQ3 **2,958**; controls RQ4 **905**. Integrated RQ3 is the record-ID union of the two legacy pools, removing 817 overlapping records. Another 1,015 queue records have no RQ hint. These are workload-routing signals, not inclusion decisions or final evidence counts. Frozen five-RQ files retain their original labels; current counts and hashes are in [`../tracking/rq_candidate_readiness.csv`](../tracking/rq_candidate_readiness.csv).
+
+## RQ3 coding and measurement-framework handoff
+
+- Keep RQ3a pathway fields distinct from RQ3b outcome/support fields. Link them by study, exposure, outcome and time window. A measured outcome does not establish an unmeasured mechanism.
+- Distinguish proposed mechanism, measured mediator, mediation test, and experimental support. Preserve design, temporal order, confounding, dose–response evidence, and consequential gaps.
+- Code worker states and proximal measures (fatigue, workload, trust/reliance, error, omission) by their actual role in each study; do not treat them as interchangeable with injury/illness or automatically exclude them.
+- G12 builds the candidate measurement framework from agreed exposure and measurement fields; G3 supplies response/gap evidence and G4 supplies modifiable controls. Use [`../templates/measurement_framework.csv`](../templates/measurement_framework.csv). Independent non-author coders do not develop hypotheses or interpret the final framework.
+
+## Shared methods and novelty checks
+
+- Compare the draft to adjacent reviews, including Bowdler et al., Matilla-Santander et al., Bao et al., Chen et al., and the distinct Jetha review/protocol. Chen's 167-paper BERTopic review is **one review**, not two.
+- Do not infer worker response categories from Chen's abstract. Its four archetypes should be described using source-verified wording; `complementary` means complementary, not automatically collaboration.
+- For current RQ4, do not describe a proposed control, technical simulation, or cross-sectional association as evidence of prevention effectiveness.
+- The novelty claim is the cross-linking of algorithmic function, exposure unit/time window/measurement, pathway, worker OSH outcome, and evaluated control **if the completed search and adjacent-review comparison continue to support it**.

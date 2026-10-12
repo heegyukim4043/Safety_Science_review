@@ -1,0 +1,36 @@
+# Data handoff and reviewer packet control
+
+The English Git package contains coordination documents and blank templates. The original dataset remains in the parent workspace; a verified local copy is in `data/survey_2026-10-12/` and is **ignored by Git**. The user will decide upload separately. Do not describe either copy as publicly deposited or as an included-study dataset.
+
+## Local source map
+
+| Local path relative to this package | What it contains | Current status |
+|---|---|---|
+| `data/survey_2026-10-12/processed/source_file_manifest.csv` | Source-file names, hashes, and counts | 56 raw exports; preserve untouched |
+| `data/survey_2026-10-12/processed/master_records.csv` | Normalized, provisionally deduplicated records | 6,822 provisional unique records |
+| `data/survey_2026-10-12/processed/source_hits.csv` | Record-to-database/search provenance | Processing output; not screening decisions |
+| `data/survey_2026-10-12/processed/screening_queue_2015_2026.csv` | Complete title/abstract screening queue | 6,592 records; provisional version |
+| `data/survey_2026-10-12/processed/reviewer_packets/manifest.json` | Source hash and packet row count | 6,592 rows per reviewer |
+| `data/survey_2026-10-12/processed/reviewer_packets/reviewer_1.csv` | Reviewer 1 independent decision file | Empty decision fields; distribute only to Reviewer 1 |
+| `data/survey_2026-10-12/processed/reviewer_packets/reviewer_2.csv` | Reviewer 2 independent decision file | Empty decision fields; distribute only to Reviewer 2 |
+| `data/survey_2026-10-12/organized/generated/abstract_retrieval_queue.csv` | Missing-abstract work queue | 3,034 records; prioritization is not exclusion |
+| `data/survey_2026-10-12/organized/manual/doi_conflict_adjudication.csv` | Manual duplicate-conflict form | Five title/DOI conflict groups pending |
+| `data/survey_2026-10-12/organized/generated/priority_43_linkage.csv` | Previous 43-paper seed linkage | 34 DOI-linked; nine need manual matching |
+
+The exact-query snapshot in [`../tracking/search_log.csv`](../tracking/search_log.csv) is copied from the original search-plan CSV in the parent workspace. Only its `export_file` paths have been rebased to the local `data/survey_2026-10-12/` snapshot; query strings and execution statuses remain the recorded versions. It has missing execution metadata. Do not invent a run date or on-screen hit count from the export file's modification time or row count.
+
+See [`LOCAL_SURVEY_BUNDLE.md`](LOCAL_SURVEY_BUNDLE.md) for the 90-file copied snapshot and its SHA-256 manifest. The snapshot is read-only; reviewer work goes into separately controlled copies.
+
+## Before giving reviewers data
+
+1. PI and search lead lock the protocol and identify whether additional search records will be added. If the queue changes, issue a **new packet version**; preserve the old version and an ID crosswalk.
+2. Data steward verifies that both reviewer files contain exactly the same `record_id` sequence, each has 6,592 unique IDs, and their source metadata match. Verify that `decision`, `exclusion_reason`, and `note` are blank at delivery.
+3. Record the source queue's SHA-256, packet version, delivery date, and assigned reviewer in a local delivery log. The current manifest records source SHA-256 `213be83f0f65c0c49ab4551c5e16bca16d729ef7c5145970ca5ca2c85941123e`; recompute it if the source changes.
+4. Deliver Reviewer 1 and Reviewer 2 files separately. Restrict visibility of in-progress decisions until both are locked. Keep adjudication and consensus in separate files; never overwrite either original.
+5. Run automated checks on allowable codes, duplicate IDs, excluded rows without reason, and unexplained source-field changes. These checks are administrative; humans decide eligibility.
+
+## What belongs in GitHub
+
+The coordination package, exact search strings, blank templates, and task status are in Git. The local `data/` survey copy is **not**. If it is later uploaded, choose access controls and keep Reviewer 1 and Reviewer 2 from inspecting each other's in-progress decisions. Otherwise use separately controlled storage and link to its versioned manifest from the GitHub task board.
+
+The parent workspace is not a Git repository; `paper1_review_handoff/` is an independent local Git repository. No remote or GitHub upload has been configured. The user will handle that step separately.

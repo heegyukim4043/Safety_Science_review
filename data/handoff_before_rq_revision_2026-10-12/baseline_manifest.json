@@ -1,0 +1,98 @@
+[
+  {
+    "file": "docs/WORKSTREAMS.md",
+    "sha256": "caea98ccc5f0779068e72410cb3b380fdedcc8fc671bc430361a7c6feb5a2362"
+  },
+  {
+    "file": "docs/SCREENING_AND_EXTRACTION_SOP.md",
+    "sha256": "060983ec8c54f05d8f8286a0d5ea96203038cd5810a4fe0de4aa3fe33dd65ad9"
+  },
+  {
+    "file": "docs/WEEK_ONE.md",
+    "sha256": "506f96ea2f21eebd0248d6db8bf03125ae4a3aebb9a9d2912d0eb4aa85926555"
+  },
+  {
+    "file": "docs/DATA_HANDOFF.md",
+    "sha256": "ed7ac759e9bc9c66c65d328e7a4e9bdea875b64073e275e5db42457ae2b26883"
+  },
+  {
+    "file": "docs/GITHUB_WORKFLOW.md",
+    "sha256": "a26031ef1a6b00fbc4a26daf75a57a99925e3013cd66d9e06a10370c256e3575"
+  },
+  {
+    "file": "docs/LOCAL_SURVEY_BUNDLE.md",
+    "sha256": "fd1ec3b12bca60357c7ddaf268b0ca435e7f9404c506967407429ab15156ef86"
+  },
+  {
+    "file": "docs/COLLECTION_AND_ELIGIBILITY_CRITERIA.md",
+    "sha256": "13355123d57ded804e0a453f5aecaedbfef404cb42529518d1bcabeb8d13461a"
+  },
+  {
+    "file": "docs/UPLOAD_CHECKLIST.md",
+    "sha256": "e79df27b54b50b01c60085353e0b3c21e89b6b993756969b4d868f7aaddc61e4"
+  },
+  {
+    "file": "tracking/assignments.csv",
+    "sha256": "399ef5c9f00d5ca19944eba9b6d3644fb325927ba36a78028457fa8ec6398860"
+  },
+  {
+    "file": "tracking/weekly_progress.csv",
+    "sha256": "834184cb716bcf8d49a373acff717cdf2ac0042879e8b1e420e6dff44c4791fd"
+  },
+  {
+    "file": "tracking/tasks.csv",
+    "sha256": "6a62ac54753b5b2470517f943efda07ec906c2761b63e48575a43508ae27d99d"
+  },
+  {
+    "file": "tracking/search_log.csv",
+    "sha256": "712bb86929c3c5abaa112da9a6a00b7a2390229370bb1d2f0bb228cf298c7e22"
+  },
+  {
+    "file": "tracking/workstream_keywords.csv",
+    "sha256": "7c9e8fc0318d796f3052debcc33c8795b555ec0686e883150acccc8fc8df03e9"
+  },
+  {
+    "file": "tracking/pilot_record_ids.csv",
+    "sha256": "d3d5d7406f9b1a2ea37497e6581122b032013bd60f32b522d7a61ded7eb73d59"
+  },
+  {
+    "file": "tracking/protocol_amendments.csv",
+    "sha256": "b8cf2591d0c27ffb06c41894856b9d2421acfb79e61e6adf0be7e80f82687e08"
+  },
+  {
+    "file": "tracking/raw_export_manifest.csv",
+    "sha256": "c0c6935852cdb906d7df2f9fd28a23c07fa8fb4a7899e021acc668b574317f66"
+  },
+  {
+    "file": "tracking/survey_snapshot_summary.json",
+    "sha256": "5d09193b6b020d7c80c2e30b13750321ead4d66ff0b98224a650a5c0683e2e67"
+  },
+  {
+    "file": "tracking/collection_decisions.csv",
+    "sha256": "53c8412f48845d0c52a97d89e5d31c232ed7f99238bafb4072cb207f1180c17f"
+  },
+  {
+    "file": "templates/study_registry.csv",
+    "sha256": "17522efb6eaac5191246c4290e4baa1be254cdb70e005b97754bad880d807caa"
+  },
+  {
+    "file": "templates/rq_evidence_link.csv",
+    "sha256": "5f85b4d6ca3439836f55949bef9700145f89d76f6394b9c0019ac6201683fba2"
+  },
+  {
+    "file": "scripts/build_pilot_manifest.py",
+    "sha256": "015e820c565212351ef2a7fbac1c02c81911704e0fc0d74324a6db515fd1fc24"
+  },
+  {
+    "file": "scripts/audit_local_survey_bundle.py",
+    "sha256": "d0564507e60a42b0e39043dda870cd747405aa96464e78eb3172de3fe1a5998f"
+  },
+  {
+    "file": "scripts/check_upload_package.py",
+    "sha256": "e05534b48625ef8a97f4ab210fa6507ac7e2b586e57b09d41840c0313a64fae1"
+  },
+  {
+    "file": "README.md",
+    "sha256": "2d47916a3bf97b001ea70802070a9ab054c05263d6ed865ba478fc1b0971af08"
+  }
+]
