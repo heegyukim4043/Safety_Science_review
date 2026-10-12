@@ -1,0 +1,15 @@
+{
+  "source": "processed/screening_queue_2015_2026.csv",
+  "source_sha256": "213be83f0f65c0c49ab4551c5e16bca16d729ef7c5145970ca5ca2c85941123e",
+  "records_each": 6592,
+  "reviewers": [
+    "reviewer_1",
+    "reviewer_2"
+  ],
+  "allowed_decisions": [
+    "include",
+    "exclude",
+    "uncertain"
+  ],
+  "warning": "Distribute separately; do not inspect or merge decisions until both copies are locked."
+}

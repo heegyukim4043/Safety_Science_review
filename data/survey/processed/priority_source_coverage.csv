@@ -1,0 +1,44 @@
+﻿source_id,label,source_type,doi,local_match_status,record_id,databases,abstract_available
+01,"Parent-Rocheleau & Parker, *Algorithms as work designers* (2022)",개념,10.1016/j.hrmr.2021.100838,matched_by_doi,P1-27069af5db67,Scopus; WOS,1
+02,"Noponen et al., 알고리즘 관리 체계적 리뷰 (2024)",리뷰,10.1007/s11301-023-00345-5,matched_by_doi,P1-77ba8b8cc573,Scopus; WOS,1
+03,"Vignola et al., 노동자 건강 연구질문 (2023)",리뷰,10.3390/ijerph20021239,matched_by_doi,P1-9b2bc0622d71,Pubmed; Scopus; WOS,1
+04,"Parent-Rocheleau et al., AMQ (2024)",척도 개발,10.1002/hrm.22185,matched_by_doi,P1-9c0c49bd9d9f,Scopus; WOS,1
+05,"Röttgen et al., COMAMA (2025)",척도 개발,10.1186/s40359-025-03680-2,matched_by_doi,P1-98a90442fbbb,Pubmed; Scopus; WOS,1
+06,"Hennum Nilsson et al., 물류 단면조사 (2025)",직접 실증,10.1007/s00420-025-02180-5,matched_by_doi,P1-6a178e6f5150,Pubmed; Scopus; WOS,1
+07,"Müller et al., EU OSH Pulse (2026)",직접 실증,10.3389/fpubh.2026.1886482,matched_by_doi,P1-035a669f6cf2,Pubmed; Scopus; WOS,1
+08,"Ma et al., 자율성·대체불안·건강 (2026)",직접 실증,10.3389/fpubh.2026.1877221,matched_by_doi,P1-12969655f807,Pubmed; Scopus; WOS,1
+09,"Semujanga & Parent-Rocheleau, 보상·투명성 (2024)",직접 실증,10.3390/ijerph21010086,matched_by_doi,P1-a1d2192da516,Pubmed; Scopus,1
+10,"Dong et al., 배달원 소진 (2025)",직접 실증,10.3389/fpubh.2025.1531541,matched_by_doi,P1-2232eb98b7b4,Pubmed; Scopus; WOS,1
+11,"Zhu et al., 성과·안전 목표충돌 (2026)",직접 실증,10.1002/hrm.70073,matched_by_doi,P1-d07a19b0939c,Scopus; WOS,1
+12,"Chen et al., 알고리즘 통제와 안전성과 (2025)",직접 실증,10.1016/j.chb.2024.108461,matched_by_doi,P1-968ca5327560,Scopus; WOS,1
+13,"Wu et al., 배달원 정신건강·위험운전 (2026)",직접 실증,10.1057/s41599-026-06909-6,matched_by_doi,P1-d0ea8a78911e,Scopus; WOS,1
+14,"Laskaris et al., 뉴욕 배달원 손상·폭행 (2024)",간접 맥락,10.1007/s11524-024-00873-9,matched_by_doi,P1-3739d178a23d,Pubmed; Scopus; WOS,1
+15,"Chigbu, 글로벌 긱 경제 리뷰 (2026)",리뷰,10.3389/fsoc.2026.1743445,matched_by_doi,P1-ea0a94d58297,Pubmed; WOS,0
+16,"Kadolkar et al., 긱 경제 리뷰 (2025 권호)",리뷰,10.1002/job.2831,matched_by_doi,P1-2e7d0f5dd814,Scopus; WOS,1
+17,"Chen et al., 일반 직장 BERTopic 리뷰 (2026 권호)",리뷰,10.1016/j.ijinfomgt.2025.102994,matched_by_doi,P1-a779d3927e78,Scopus; WOS,1
+18,"Rabasa-Martín & Martínez-Jarreta, 정신건강 scoping review (2026)",리뷰,10.3389/fpubh.2026.1857108,matched_by_doi,P1-fa2a5f5fce0e,Pubmed; Scopus; WOS,1
+19,"Hennum Nilsson et al., 물류 2현장 사례 (2025)",조직 사례,10.1016/j.ssci.2025.106863,matched_by_doi,P1-d1f00aac1808,Scopus; WOS,1
+20,"Petzoldt et al., 동적 과제배정 (2022)",인접 실험,10.3390/app122412645,doi_not_in_exports,,,
+21,"Karakikes & Nathanael, 결정권·인지부하 (2023 권호)",인접 실험,10.1007/s10111-022-00719-x,matched_by_doi,P1-dd7b4eaf5b50,WOS,0
+22,"Messeri et al., 피로완화 재배정 (2022)",인접 실험,10.1109/lra.2022.3143520,matched_by_doi,P1-abf01bbd9d1b,IEEE EXplore; WOS,1
+23,"Yao et al., 동적 피로 모델 재배정 (2024)",인접 공학 실험,10.1016/j.cie.2023.109855,matched_by_doi,P1-27932268d9d0,WOS,0
+24,"Aricò et al., EEG 기반 적응형 자동화 (2016)",인접 실험,10.3389/fnhum.2016.00539,matched_by_doi,P1-fbe1c0033655,Pubmed; WOS,0
+25,"Javernik et al., 맞춤형 로봇 속도 (2026)",인접 실험,10.1177/00187208261423621,matched_by_doi,P1-d491b8bb7946,Pubmed; WOS,0
+26,"Chen et al., 전자폐기물 분해 협동로봇 (2026)",인접 실험,10.1080/00140139.2026.2650455,matched_by_doi,P1-f3a8dad71d4c,Pubmed; WOS,0
+27,"Lorenzini et al., 산업 인간–로봇 인간공학 리뷰 (2022)",리뷰,10.3389/frobt.2022.813907,matched_by_doi,P1-ab538a1fefa3,Pubmed; WOS,0
+28,"Bao et al., 인간중심 과제배정 95연구 리뷰 (2026)",리뷰,10.3390/machines14080894,matched_by_doi,P1-8c1b746564ae,WOS,0
+29,"Javernik et al., NASA-TLX 협동작업 실험 (2023)",인접 실험,10.2507/ijsimm22-4-658,matched_by_doi,P1-5b9eb3115a0b,WOS,0
+30,"Hopko et al., 로봇 지원·피로·상황인식 (2021)",인접 실험,10.1109/lra.2021.3062787,matched_by_doi,P1-323a549a622b,IEEE EXplore; WOS,1
+31,"NIOSH, AI 위해 관리의 실천 전략 (2026)",기관 제안,,prior_source_has_no_doi,,,
+32,"Jetha et al., living review **프로토콜** (2025)",프로토콜,,prior_source_has_no_doi,,,
+33,"ILO/JRC, 일반 직장 물류·의료 사례 (2024)",기관 보고서,,prior_source_has_no_doi,,,
+34,"EU-OSHA, 벨기에 자동차공장 사례 (2024)",기관 사례,,prior_source_has_no_doi,,,
+35,"Christie & Ward, 배달 모터사이클 안전 (2023)",간접 맥락,10.1016/j.ssci.2022.105991,doi_not_in_exports,,,
+36,"Salmon et al., 배달원 안전 시스템 분석 (2023)",간접 맥락,10.1016/j.ssci.2023.106263,doi_not_in_exports,,,
+37,"Kolbeinsson et al., 조립작업 중단 실험 (2017)",간접 실험,,prior_source_has_no_doi,,,
+38,"Guo et al., 중단 개입 리뷰 (2021)",간접 리뷰,,prior_source_has_no_doi,,,
+39,"Cram et al., Uber 운전자 알고리즘 통제·테크노스트레스 (2022)",직접 실증,10.1080/07421222.2022.2063556,matched_by_doi,P1-e9ff587f3e87,Scopus; WOS,1
+40,"Zhang et al., 차량호출 운전자 공격운전 (2025)",직접 실증,10.1016/j.trf.2025.05.021,matched_by_doi,P1-dcef4f6b2565,Scopus; WOS,1
+41,"Liang et al., 알고리즘 통제 척도·서비스성과·업무웰빙 (2025)",척도·직접 실증,10.1016/j.jbusres.2025.115199,matched_by_doi,P1-d28fa594608c,Scopus; WOS,1
+42,"Xu et al., 중국 배달원 28명 질적 연구 (2026 권호)",질적 사례,10.1093/iwc/iwaf039,matched_by_doi,P1-3845b7c600bb,Scopus; WOS,1
+43,"Zhang et al., 배달원 스트레스 평가·일탈행동 (2023)",직접 실증,10.1371/journal.pone.0294074,matched_by_doi,P1-ae1835b8fbbd,Pubmed; Scopus; WOS,1

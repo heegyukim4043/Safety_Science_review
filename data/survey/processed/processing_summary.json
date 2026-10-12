@@ -1,0 +1,27 @@
+{
+  "source_files": 56,
+  "exported_rows": 10858,
+  "rows_by_database": {
+    "ACM": 1512,
+    "IEEE EXplore": 1265,
+    "Pubmed": 868,
+    "Scopus": 2470,
+    "WOS": 4743
+  },
+  "provisional_unique_records": 6822,
+  "provisional_duplicate_rows": 4036,
+  "unique_records_with_abstract": 3559,
+  "unique_records_outside_2015_2026": 230,
+  "unique_records_mixed_years_check": 0,
+  "unique_records_missing_year_check": 0,
+  "multiple_dois_to_check": 0,
+  "same_title_conflicting_doi_groups": 5,
+  "priority_sources_matched_by_doi": 34,
+  "provisional_in_window_screening_queue": 6592,
+  "queue_by_search_stream": {
+    "am_related_search_only": 2016,
+    "both_streams": 13,
+    "hrc_search_only": 4563
+  },
+  "method": "Database record ID or DOI exact match plus normalized exact title within one publication year when at least one DOI is missing; different nonempty DOIs not auto-merged; automated and provisional; no inclusion decisions"
+}
