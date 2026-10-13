@@ -52,8 +52,3 @@ Final outputs include the manuscript, RQ tables, evidence map, measurement frame
 
 [Full research plan](docs/RESEARCH_PLAN.md) | [Plan review agenda](collaboration/04_RESEARCH_PLAN_REVIEW.md) | [Five-method phase guide](docs/METHODOLOGY_AND_PHASE_CROSSWALK.md) | [Screening and extraction SOP](docs/SCREENING_AND_EXTRACTION_SOP.md)
 
-## Team confirmation
-
-Please confirm **survey coverage/criteria, the four RQs, named roles and capacity, phase gates, and methodological/analysis decisions**. Respond with **agree**, **revise** or **need information** and an exact proposed change where applicable. Named assignments, protocol decisions and scientific approvals remain pending.
-
-[Review instructions](collaboration/README.md) | [Response template](templates/COLLABORATOR_REVIEW_RESPONSE.md) | [16-item confirmation register](tracking/collaborator_confirmations.csv)
