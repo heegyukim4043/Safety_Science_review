@@ -2,11 +2,11 @@
 
 **Audit date:** 12 October 2026. **Current working structure:** `four_rq_v0.2`.
 
-This assessment compares `Algorithmic_Work_Exposure_Paper1_Research_Plan.docx` with the README, workstream guide, screening SOP, collection criteria, and task board as they stood immediately before this revision. The original DOCX remains unchanged outside this repository. Its SHA-256 is `df0e81f8e7640cc22c246842bd4f2b30dbd3cfb9c371f11c55cc3234e187b752`.
+This historical assessment compares the original `Algorithmic_Work_Exposure_Paper1_Research_Plan.docx` with the README, workstream guide, screening SOP, collection criteria, and task board as they stood immediately before the four-RQ revision. Its SHA-256 is `df0e81f8e7640cc22c246842bd4f2b30dbd3cfb9c371f11c55cc3234e187b752`. The current DOCX was subsequently rewritten on 12 October 2026 as working plan v0.3; see [the full revised plan](RESEARCH_PLAN.md). This original-source hash is not the revised DOCX hash.
 
 The parent manuscript skeleton `paper1_draft.md` was also checked. It already retained the descriptive/interpretive field tiers and core alpha/recoding targets in sections 3.5–3.6, but its selection section removed the title/abstract calibration threshold and made PRESS conditional on availability. The concern is therefore partly **inconsistency between the manuscript skeleton and implementation guidance**, not loss of every source specification across all files.
 
-Source locators below use the DOCX's numbered sections. `P###` identifies the one-based top-level body paragraph in `word/document.xml`, counting empty paragraphs and excluding paragraphs inside tables. Tables are numbered in document order. These are audit locators, not Word page numbers. A local pre-revision package backup is retained under the Git-ignored `data/handoff_before_rq_revision_2026-10-12/` folder.
+Source locators below use the DOCX's numbered sections. `P###` identifies the one-based top-level body paragraph in `word/document.xml`, counting empty paragraphs and excluding paragraphs inside tables. Tables are numbered in document order. These are audit locators, not Word page numbers.
 
 ## 1. Strategy: what stayed aligned and what changed
 
@@ -67,7 +67,7 @@ RQ3 has two extraction subdomains, **RQ3a (pathways)** and **RQ3b (outcomes and 
 | Causal interpretation | No stronger inference is created by combining questions | Report association, mediator measurement, mediation analysis, experimental support, and intervention effect separately. |
 | Novelty | Number of RQs does not change originality | Verify the integrated measurement/exposure–response/control map against adjacent reviews. |
 
-**Recommendation:** adopt the four-question structure, with the separate RQ3a/RQ3b fields. Keep three analytical workstreams: **G12** for RQ1–2, **G3** for integrated RQ3, and **G4** for controls. The old workstream labels G34/G5 are legacy identifiers and do not imply that four separate people are required.
+**Recommendation at this audit:** adopt the four-question structure, with separate RQ3a/RQ3b fields. G12/G3/G4 retain their meaning as keyword/coordination bundles. The subsequent [team allocation](TEAM_ASSIGNMENTS_AND_HANDOFFS.md) assigns four accountable RQ1_LEAD through RQ4_LEAD roles and four analysis branches; one person may hold RQ1/RQ2 while retaining separate outputs and another human cross-reviewer. G34/G5 are historical labels.
 
 ## 4. Candidate readiness after the merger
 

@@ -1,0 +1,359 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Paper 1 | Two RQ rounds with reviewed main checkpoints",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "cloud": {
+          "label": "Approved shared main input"
+        },
+        "frontend": {
+          "label": "Assigned RQ branch"
+        },
+        "security": {
+          "label": "All-four-RQ review + main merge"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "rq1",
+      "label": "RQ1"
+    },
+    {
+      "id": "rq2",
+      "label": "RQ2"
+    },
+    {
+      "id": "rq3",
+      "label": "RQ3"
+    },
+    {
+      "id": "rq4",
+      "label": "RQ4"
+    }
+  ],
+  "mainPath": [
+    "base",
+    "r1_rq1",
+    "mid",
+    "r2_rq1",
+    "second"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "base"
+    ],
+    "allowedTerminals": [
+      "second"
+    ],
+    "requiredEdges": [
+      {
+        "from": "base",
+        "to": "r1_rq1"
+      },
+      {
+        "from": "r1_rq1",
+        "to": "mid"
+      },
+      {
+        "from": "mid",
+        "to": "r2_rq1"
+      },
+      {
+        "from": "r2_rq1",
+        "to": "second"
+      },
+      {
+        "from": "base",
+        "to": "r1_rq2"
+      },
+      {
+        "from": "r1_rq2",
+        "to": "mid"
+      },
+      {
+        "from": "mid",
+        "to": "r2_rq2"
+      },
+      {
+        "from": "r2_rq2",
+        "to": "second"
+      },
+      {
+        "from": "base",
+        "to": "r1_rq3"
+      },
+      {
+        "from": "r1_rq3",
+        "to": "mid"
+      },
+      {
+        "from": "mid",
+        "to": "r2_rq3"
+      },
+      {
+        "from": "r2_rq3",
+        "to": "second"
+      },
+      {
+        "from": "base",
+        "to": "r1_rq4"
+      },
+      {
+        "from": "r1_rq4",
+        "to": "mid"
+      },
+      {
+        "from": "mid",
+        "to": "r2_rq4"
+      },
+      {
+        "from": "r2_rq4",
+        "to": "second"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "base",
+      "lane": "rq1",
+      "col": 0,
+      "type": "cloud",
+      "label": "main: G5",
+      "sublabel": "common evidence freeze",
+      "tag": "P1-P5 approved",
+      "width": 140
+    },
+    {
+      "id": "r1_rq1",
+      "lane": "rq1",
+      "col": 1,
+      "type": "frontend",
+      "label": "RQ1: Exposure",
+      "sublabel": "RQ1_LEAD | Round 1",
+      "tag": "P6A: Evidence map",
+      "width": 140
+    },
+    {
+      "id": "r1_rq2",
+      "lane": "rq2",
+      "col": 1,
+      "type": "frontend",
+      "label": "RQ2: Measurement",
+      "sublabel": "RQ2_LEAD | Round 1",
+      "tag": "P6A: Evidence map",
+      "width": 140
+    },
+    {
+      "id": "r1_rq3",
+      "lane": "rq3",
+      "col": 1,
+      "type": "frontend",
+      "label": "RQ3: Pathways + OSH",
+      "sublabel": "RQ3_LEAD | Round 1",
+      "tag": "P6A: Evidence map",
+      "width": 140
+    },
+    {
+      "id": "r1_rq4",
+      "lane": "rq4",
+      "col": 1,
+      "type": "frontend",
+      "label": "RQ4: Controls",
+      "sublabel": "RQ4_LEAD | Round 1",
+      "tag": "P6A: Evidence map",
+      "width": 140
+    },
+    {
+      "id": "mid",
+      "lane": "rq1",
+      "col": 2,
+      "type": "security",
+      "label": "main: G6A",
+      "sublabel": "midpoint review + merge",
+      "tag": "PI + cross-review",
+      "width": 140
+    },
+    {
+      "id": "r2_rq1",
+      "lane": "rq1",
+      "col": 3,
+      "type": "frontend",
+      "label": "RQ1: Exposure",
+      "sublabel": "RQ1_LEAD | Round 2",
+      "tag": "P6B: Linked synthesis",
+      "width": 140
+    },
+    {
+      "id": "r2_rq2",
+      "lane": "rq2",
+      "col": 3,
+      "type": "frontend",
+      "label": "RQ2: Measurement",
+      "sublabel": "RQ2_LEAD | Round 2",
+      "tag": "P6B: Linked synthesis",
+      "width": 140
+    },
+    {
+      "id": "r2_rq3",
+      "lane": "rq3",
+      "col": 3,
+      "type": "frontend",
+      "label": "RQ3: Pathways + OSH",
+      "sublabel": "RQ3_LEAD | Round 2",
+      "tag": "P6B: Linked synthesis",
+      "width": 140
+    },
+    {
+      "id": "r2_rq4",
+      "lane": "rq4",
+      "col": 3,
+      "type": "frontend",
+      "label": "RQ4: Controls",
+      "sublabel": "RQ4_LEAD | Round 2",
+      "tag": "P6B: Linked synthesis",
+      "width": 140
+    },
+    {
+      "id": "second",
+      "lane": "rq1",
+      "col": 4,
+      "type": "security",
+      "label": "main: G6",
+      "sublabel": "second review + merge",
+      "tag": "PI + cross-review",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "fork_r1_1",
+      "from": "base",
+      "to": "r1_rq1",
+      "role": "main"
+    },
+    {
+      "id": "pr_r1_1",
+      "from": "r1_rq1",
+      "to": "mid",
+      "role": "main",
+      "label": "reviewed PRs"
+    },
+    {
+      "id": "fork_r2_1",
+      "from": "mid",
+      "to": "r2_rq1",
+      "role": "main"
+    },
+    {
+      "id": "pr_r2_1",
+      "from": "r2_rq1",
+      "to": "second",
+      "role": "main",
+      "label": "reviewed PRs"
+    },
+    {
+      "id": "fork_r1_2",
+      "from": "base",
+      "to": "r1_rq2",
+      "role": "branch"
+    },
+    {
+      "id": "pr_r1_2",
+      "from": "r1_rq2",
+      "to": "mid",
+      "role": "branch"
+    },
+    {
+      "id": "fork_r2_2",
+      "from": "mid",
+      "to": "r2_rq2",
+      "role": "branch"
+    },
+    {
+      "id": "pr_r2_2",
+      "from": "r2_rq2",
+      "to": "second",
+      "role": "branch"
+    },
+    {
+      "id": "fork_r1_3",
+      "from": "base",
+      "to": "r1_rq3",
+      "role": "branch"
+    },
+    {
+      "id": "pr_r1_3",
+      "from": "r1_rq3",
+      "to": "mid",
+      "role": "branch"
+    },
+    {
+      "id": "fork_r2_3",
+      "from": "mid",
+      "to": "r2_rq3",
+      "role": "branch"
+    },
+    {
+      "id": "pr_r2_3",
+      "from": "r2_rq3",
+      "to": "second",
+      "role": "branch"
+    },
+    {
+      "id": "fork_r1_4",
+      "from": "base",
+      "to": "r1_rq4",
+      "role": "branch"
+    },
+    {
+      "id": "pr_r1_4",
+      "from": "r1_rq4",
+      "to": "mid",
+      "role": "branch"
+    },
+    {
+      "id": "fork_r2_4",
+      "from": "mid",
+      "to": "r2_rq4",
+      "role": "branch"
+    },
+    {
+      "id": "pr_r2_4",
+      "from": "r2_rq4",
+      "to": "second",
+      "role": "branch"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phase 1 | P6A",
+      "items": [
+        "Map agreed evidence, source locations, denominators and missingness",
+        "Midpoint G6A requires all four products and a signed action log"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Phase 2 | P6B",
+      "items": [
+        "Fork fresh RQ branches from the accepted G6A main commit",
+        "Resolve review actions; compare evidence and produce linked synthesis"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Second review | G6",
+      "items": [
+        "All four final RQ products reviewed on one approved input",
+        "After G6: P7 synthesis -> G7; P8 reporting/release -> G8"
+      ]
+    }
+  ]
+}

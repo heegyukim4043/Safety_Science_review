@@ -1,0 +1,177 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "P7 | Synthesis and measurement framework",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "cloud": {
+          "label": "Reviewed main"
+        },
+        "frontend": {
+          "label": "Phase work"
+        },
+        "security": {
+          "label": "AND approval gate"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "work0",
+      "label": "integration/evidence-map"
+    },
+    {
+      "id": "work1",
+      "label": "phase-07/measurement-framework"
+    }
+  ],
+  "mainPath": [
+    "base",
+    "work0",
+    "gate",
+    "merged"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "base"
+    ],
+    "allowedTerminals": [
+      "merged"
+    ],
+    "requiredEdges": [
+      {
+        "from": "base",
+        "to": "work0"
+      },
+      {
+        "from": "work0",
+        "to": "gate"
+      },
+      {
+        "from": "base",
+        "to": "work1"
+      },
+      {
+        "from": "work1",
+        "to": "gate"
+      },
+      {
+        "from": "gate",
+        "to": "merged"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "base",
+      "lane": "work0",
+      "col": 0,
+      "type": "cloud",
+      "label": "main: G6",
+      "sublabel": "recorded commit",
+      "width": 140
+    },
+    {
+      "id": "work0",
+      "lane": "work0",
+      "col": 1,
+      "type": "frontend",
+      "label": "Map / manuscript",
+      "sublabel": "PI / four leads",
+      "width": 140,
+      "tag": "S7"
+    },
+    {
+      "id": "work1",
+      "lane": "work1",
+      "col": 1,
+      "type": "frontend",
+      "label": "Measure framework",
+      "sublabel": "RQ2_LEAD / DATA",
+      "width": 140,
+      "tag": "S7"
+    },
+    {
+      "id": "gate",
+      "lane": "work0",
+      "col": 2,
+      "type": "security",
+      "label": "Approve G7",
+      "sublabel": "PI / reviewers",
+      "width": 140
+    },
+    {
+      "id": "merged",
+      "lane": "work0",
+      "col": 3,
+      "type": "cloud",
+      "label": "main: G7",
+      "sublabel": "next phase base",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "fork0",
+      "from": "base",
+      "to": "work0",
+      "role": "main"
+    },
+    {
+      "id": "pr0",
+      "from": "work0",
+      "to": "gate",
+      "role": "main",
+      "label": "reviewed PRs"
+    },
+    {
+      "id": "fork1",
+      "from": "base",
+      "to": "work1",
+      "role": "branch"
+    },
+    {
+      "id": "pr1",
+      "from": "work1",
+      "to": "gate",
+      "role": "branch"
+    },
+    {
+      "id": "accept",
+      "from": "gate",
+      "to": "merged",
+      "label": "merge + record",
+      "role": "main",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Start and assign",
+      "items": [
+        "Branch from G6; roles still await names",
+        "S7 | T29 / T31"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Acceptance gate",
+      "items": [
+        "Verified joins, integrated framework and manuscript with source-grounded interpretation."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Merge before next phase",
+      "items": [
+        "All listed branch reviews required; G7 is pending",
+        "Record main commit and input version; then fork again"
+      ]
+    }
+  ]
+}

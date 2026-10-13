@@ -1,0 +1,27 @@
+{
+  "diagram_type": "workflow",
+  "output": "paper1_rq_rounds_workflow.html",
+  "specification": "paper1_rq_rounds_workflow.json",
+  "specification_sha256": "dc0d181fedb9201f23c0f33e38104785e55b2b1ea4418461ac9891fd73d7ce24",
+  "artifact_sha256": "a58e437cf21f63cb1330a7ca6eeacf145a2288bdc8c48a0e5ed959316e67de17",
+  "artifact_bytes": 814285,
+  "validation": "9/9 showcase, 0 errors, 0 warnings",
+  "browser_evidence": "passed",
+  "visual_review": "passed",
+  "correction_rounds": 0,
+  "visual_review_scope": [
+    "1440x900 light",
+    "2048x1320 dark"
+  ],
+  "automated_coverage": [
+    "1440x900 light",
+    "1600x1000 light",
+    "1920x1080 light",
+    "2048x1320 light"
+  ],
+  "observations": [
+    "Four RQ branches fan out from approved G5 and join at G6A; fresh second-round branches join at G6.",
+    "Gate dependency arrows and round/owner labels readable; no unrelated route crossings or clipping; large-display balance reviewed."
+  ],
+  "note": "Exact source/HTML bytes bound; raw browser visualReview remains pending by design, with this separate image review. Scientific gates remain pending; no remote branches created."
+}

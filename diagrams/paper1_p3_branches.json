@@ -1,0 +1,177 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "P3 | Title and abstract review",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "cloud": {
+          "label": "Reviewed main"
+        },
+        "frontend": {
+          "label": "Phase work"
+        },
+        "security": {
+          "label": "AND approval gate"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "work0",
+      "label": "phase-03/screening-consensus"
+    },
+    {
+      "id": "work1",
+      "label": "phase-03/screening-qa"
+    }
+  ],
+  "mainPath": [
+    "base",
+    "work0",
+    "gate",
+    "merged"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "base"
+    ],
+    "allowedTerminals": [
+      "merged"
+    ],
+    "requiredEdges": [
+      {
+        "from": "base",
+        "to": "work0"
+      },
+      {
+        "from": "work0",
+        "to": "gate"
+      },
+      {
+        "from": "base",
+        "to": "work1"
+      },
+      {
+        "from": "work1",
+        "to": "gate"
+      },
+      {
+        "from": "gate",
+        "to": "merged"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "base",
+      "lane": "work0",
+      "col": 0,
+      "type": "cloud",
+      "label": "main: G2",
+      "sublabel": "recorded commit",
+      "width": 140
+    },
+    {
+      "id": "work0",
+      "lane": "work0",
+      "col": 1,
+      "type": "frontend",
+      "label": "Review / consensus",
+      "sublabel": "ADJ / REV1 / REV2",
+      "width": 140,
+      "tag": "S3"
+    },
+    {
+      "id": "work1",
+      "lane": "work1",
+      "col": 1,
+      "type": "frontend",
+      "label": "Counts / record QA",
+      "sublabel": "DATA",
+      "width": 140,
+      "tag": "S3"
+    },
+    {
+      "id": "gate",
+      "lane": "work0",
+      "col": 2,
+      "type": "security",
+      "label": "Approve G3",
+      "sublabel": "ADJ / reviewers",
+      "width": 140
+    },
+    {
+      "id": "merged",
+      "lane": "work0",
+      "col": 3,
+      "type": "cloud",
+      "label": "main: G3",
+      "sublabel": "next phase base",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "fork0",
+      "from": "base",
+      "to": "work0",
+      "role": "main"
+    },
+    {
+      "id": "pr0",
+      "from": "work0",
+      "to": "gate",
+      "role": "main",
+      "label": "reviewed PRs"
+    },
+    {
+      "id": "fork1",
+      "from": "base",
+      "to": "work1",
+      "role": "branch"
+    },
+    {
+      "id": "pr1",
+      "from": "work1",
+      "to": "gate",
+      "role": "branch"
+    },
+    {
+      "id": "accept",
+      "from": "gate",
+      "to": "merged",
+      "label": "merge + record",
+      "role": "main",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Start and assign",
+      "items": [
+        "Branch from G2; roles still await names",
+        "S3 | T14"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Acceptance gate",
+      "items": [
+        "Two decisions per queue ID; adjudicated advancement; reconciled record counts."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Merge before next phase",
+      "items": [
+        "All listed branch reviews required; G3 is pending",
+        "Record main commit and input version; then fork again"
+      ]
+    }
+  ]
+}

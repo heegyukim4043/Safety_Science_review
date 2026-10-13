@@ -1,0 +1,177 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "P5 | Evidence coding and freeze",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "cloud": {
+          "label": "Reviewed main"
+        },
+        "frontend": {
+          "label": "Phase work"
+        },
+        "security": {
+          "label": "AND approval gate"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "work0",
+      "label": "phase-05/core-coding"
+    },
+    {
+      "id": "work1",
+      "label": "phase-05/reliability-freeze"
+    }
+  ],
+  "mainPath": [
+    "base",
+    "work0",
+    "gate",
+    "merged"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "base"
+    ],
+    "allowedTerminals": [
+      "merged"
+    ],
+    "requiredEdges": [
+      {
+        "from": "base",
+        "to": "work0"
+      },
+      {
+        "from": "work0",
+        "to": "gate"
+      },
+      {
+        "from": "base",
+        "to": "work1"
+      },
+      {
+        "from": "work1",
+        "to": "gate"
+      },
+      {
+        "from": "gate",
+        "to": "merged"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "base",
+      "lane": "work0",
+      "col": 0,
+      "type": "cloud",
+      "label": "main: G4",
+      "sublabel": "recorded commit",
+      "width": 140
+    },
+    {
+      "id": "work0",
+      "lane": "work0",
+      "col": 1,
+      "type": "frontend",
+      "label": "Code / adjudicate",
+      "sublabel": "ADJ / REV1 / REV2",
+      "width": 140,
+      "tag": "S5"
+    },
+    {
+      "id": "work1",
+      "lane": "work1",
+      "col": 1,
+      "type": "frontend",
+      "label": "Reliability / freeze",
+      "sublabel": "DATA / ADJ / PI",
+      "width": 140,
+      "tag": "S5"
+    },
+    {
+      "id": "gate",
+      "lane": "work0",
+      "col": 2,
+      "type": "security",
+      "label": "Approve G5",
+      "sublabel": "PI / reviewers",
+      "width": 140
+    },
+    {
+      "id": "merged",
+      "lane": "work0",
+      "col": 3,
+      "type": "cloud",
+      "label": "main: G5",
+      "sublabel": "next phase base",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "fork0",
+      "from": "base",
+      "to": "work0",
+      "role": "main"
+    },
+    {
+      "id": "pr0",
+      "from": "work0",
+      "to": "gate",
+      "role": "main",
+      "label": "reviewed PRs"
+    },
+    {
+      "id": "fork1",
+      "from": "base",
+      "to": "work1",
+      "role": "branch"
+    },
+    {
+      "id": "pr1",
+      "from": "work1",
+      "to": "gate",
+      "role": "branch"
+    },
+    {
+      "id": "accept",
+      "from": "gate",
+      "to": "merged",
+      "label": "merge + record",
+      "role": "main",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Start and assign",
+      "items": [
+        "Branch from G4; roles still await names",
+        "S5 | T17 / T18 / T19 / T20 / T21 / T28 / T33"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Acceptance gate",
+      "items": [
+        "Agreed core codes, verified descriptive fields, reliability and approved T33 freeze."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Merge before next phase",
+      "items": [
+        "All listed branch reviews required; G5 is pending",
+        "Record main commit and input version; then fork again"
+      ]
+    }
+  ]
+}

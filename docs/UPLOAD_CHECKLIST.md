@@ -1,15 +1,10 @@
-# English-only upload checklist
+# Repository package checks
 
-The user will upload this repository separately. The intended Git upload contains English documentation, task and decision tables, exact search strings, the 56-file raw-export hash list, and a local snapshot summary. The `data/` folder is excluded from Git and is **not** part of this upload candidate.
+1. Run `python scripts/check_upload_package.py --standalone` to verify the prepared folder, or run without `--standalone` after integrating it into a Git checkout.
+2. Confirm the [four-part collaborator review](../collaboration/README.md), [full plan](RESEARCH_PLAN.md), [phase playbook](PHASE_EXECUTION_PLAYBOOK.md) and [current diagram](../diagrams/paper1_rq_rounds_workflow.visual-check.1440x900.light.png) are accessible.
+3. Keep pending decisions, roles and scientific approvals pending until actual evidence and named approval are recorded. Counts and ID manifests are preparation outputs.
+4. Verify the exact search histories, final period/update, eligibility, PRESS, registration, reviewer funding and calibration before formal screening. See the [methodology guide](METHODOLOGY_AND_PHASE_CROSSWALK.md).
+5. Preserve the common evidence version and G5 -> G6A -> G6 -> G7 -> G8 dependencies. All work PRs target main.
+6. Use [data handoff](DATA_HANDOFF.md) for source references, separate reviewer inputs and approved evidence release. Scientific raw data and reviewer judgments are not included in this planning package.
 
-Before uploading:
-
-1. Run `py -3.9 scripts/check_upload_package.py` from the repository root. It checks tracked and untracked upload-candidate text/paths for Korean script, required methods files, Markdown links, CSV shape, search counts, the four-RQ mapping, calibration IDs, and exclusion of `data/` from Git. Untracked candidate files still require staging/commit by the uploader.
-2. Read [`COLLECTION_AND_ELIGIBILITY_CRITERIA.md`](COLLECTION_AND_ELIGIBILITY_CRITERIA.md). Have the PI fill and approve [`collection_decisions.csv`](../tracking/collection_decisions.csv) before formal screening. Unapproved rules remain visibly pending; do not turn them into retrospective claims.
-3. Confirm that only intended files are staged with `git status --short` and `git diff --cached --stat`.
-4. Keep raw exports, original-language bibliographic records, abstracts, full texts, and reviewer decisions in the local controlled survey snapshot until an explicit data-sharing decision is made. Do not translate original study titles or abstracts in an audit copy.
-5. Confirm current four-RQ labels in the README/tasks/templates, preserve legacy labels only where explicitly identified, and include the [source-plan comparison](SOURCE_PLAN_COMPARISON_AND_RQ_REVISION.md), crosswalk, reliability plan, and blank measurement-framework template. Working revisions must not be labeled signed/registered amendments before PI approval.
-6. Include the three collaborator entry documents: [project status/protocol](PROJECT_STATUS_AND_REVIEW_PROTOCOL.md), [method stages/branches](RESEARCH_STAGES_AND_BRANCHES.md), and [team assignment/handoffs](TEAM_ASSIGNMENTS_AND_HANDOFFS.md). Include the four RQ starter kits, stage/branch/RQ assignment tables, freeze log, and issue/PR templates. Names, remote branches, settings and scientific results remain pending where no evidence exists.
-7. Before analysis starts, have DATA release the common approved evidence freeze, assign separate RQ1-RQ4 accountable leads and cross-reviewers, and follow the explicit RQ-to-integration-to-main merge sequence. The current upload can share the planning package before those scientific gates are completed.
-
-The English-only requirement applies to **authored upload materials and file paths**. Source records retain their original language for provenance and will require a separate release decision if uploaded later.
+English filenames and authored materials are required. Original source titles/abstracts retain their language and provenance when separately accessed. A technical package check does not establish methodological completion or approval.

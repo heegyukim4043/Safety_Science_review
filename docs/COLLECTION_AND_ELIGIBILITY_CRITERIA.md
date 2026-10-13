@@ -31,7 +31,7 @@ Worker states and proximal indicators remain within the source scope: workload, 
 | Rule | Current state | Decision still required |
 |---|---|---|
 | Publication period | The existing queue is filtered to **2015–2026**. Many planned strings use `2015-01-01` to `2026-10-02`; exported search histories do not fully establish the actual execution timestamp for each query. | PI/search lead must state the rationale for 2015, the final inclusive search cutoff, how online versus print years are handled, and the date of any update search. Do not label the current file date as an executed search date. |
-| Language | No language-based exclusion has been applied to the local queue solely by automation. | PI must decide whether any language restriction exists, whether translation is available, and how it will be reported. Do not silently exclude non-English records. Preserve original-language bibliographic titles and abstracts as source data; English documentation does not mean translating source records. |
+| Language | No language-based exclusion has been applied to the working queue solely by automation. | PI must decide whether any language restriction exists, whether translation is available, and how it will be reported. Do not silently exclude non-English records. Preserve original-language bibliographic titles and abstracts as source data; English documentation does not mean translating source records. |
 | Publication/source types | Core analysis is original empirical evidence. Reviews and protocols are separated for context/novelty. Exported database records may include journals, conference publications, and other document types. | PI must lock treatment of conference abstracts/full papers, preprints, dissertations, reports, and grey literature. The existing 5-database file collection cannot be described as covering inaccessible databases or all grey literature. |
 | Full-text availability | A record is not excluded merely because its abstract is missing. | Define a documented library/open-copy/author-contact sequence before using `full_text_unavailable`. |
 
@@ -43,7 +43,7 @@ The exact field tags, Boolean syntax, phrase marks, limits, status, export file,
 
 The original DOCX recommends WoS, Scopus, PubMed/MEDLINE, PsycINFO and IEEE, with ACM conditional on unique HCI coverage. PsycINFO is an unfulfilled original recommendation; Embase and CINAHL are later search-plan expansions. Some current discovery queries omit the worker/outcome concept blocks from the source's three-family architecture. Document this broader retrieval and its precision/coverage implications. Obtain independent **PRESS** review of final or update queries before execution and archive comments, responses, and final syntax. No completed PRESS review is currently recorded.
 
-| Source | Exported search IDs in the local collection | State |
+| Source | Exported search IDs in the collected corpus | State |
 |---|---|---|
 | PubMed | `P1_AM`, `P2_OSH`, `P3_HRC`, `P4_REVIEW`, `P5_MEASURE`, `P6_CONTROL` | Six exports present; not screened |
 | Scopus | `S1_AM`, `S1B_AM_EXPAND`, `S2_OSH`, `S4_REVIEW`, `S5_MEASURE`, `S6_CONTROL` | Six exports present; `S3_HRC` is planned with **no export** |
@@ -51,7 +51,7 @@ The original DOCX recommends WoS, Scopus, PubMed/MEDLINE, PsycINFO and IEEE, wit
 | IEEE Xplore | `I1_HRC`, `I2_ALLOC`, `I3_AM`, `I4_CONTROL` | Four exports present; possible `I1_HRC` 1,000-record cap needs verification |
 | ACM Digital Library | `A1_AM`, `A2_CONTROL`, `A3_HRC` | Three exports present; complete on-screen total/coverage needs verification |
 
-Together these are **25 exported search-plan rows**. Another **17 rows** are planned but lack exports: Scopus `S3_HRC`; Embase on Ovid; APA PsycINFO on Ovid; five CINAHL on EBSCOhost rows; four Europe PMC rows; one OpenAlex discovery row; and four Google Scholar discovery rows. These are **not completed searches**. Embase, PsycINFO, and CINAHL were not accessible for this local collection. Review-identification queries (`P4_REVIEW`, `S4_REVIEW`, `W4_REVIEW`) locate adjacent reviews and should not be added to primary-study counts.
+Together these are **25 exported search-plan rows**. Another **17 rows** are planned but lack exports: Scopus `S3_HRC`; Embase on Ovid; APA PsycINFO on Ovid; five CINAHL on EBSCOhost rows; four Europe PMC rows; one OpenAlex discovery row; and four Google Scholar discovery rows. These are **not completed searches**. Embase, PsycINFO, and CINAHL were not accessible for this collected corpus. Review-identification queries (`P4_REVIEW`, `S4_REVIEW`, `W4_REVIEW`) locate adjacent reviews and should not be added to primary-study counts.
 
 The existing search architecture combines common algorithmic management/control and HRC/adaptive-automation concepts with OSH, measurement, control, and review terms. [`../tracking/workstream_keywords.csv`](../tracking/workstream_keywords.csv) distinguishes terms found in exported queries from **additional terms that have not been run as a dedicated expansion**. In particular, there is no exported dedicated RQ3 pathway query. Search leads should evaluate expansion proposals for incremental recall, duplication, sentinel-paper coverage, and feasibility, then document any new query as a protocol amendment.
 
@@ -66,7 +66,7 @@ The existing search architecture combines common algorithmic management/control 
 
 ## 5. Intake, deduplication, and priority records
 
-The current local collection comprises **56 raw export files** and **10,858 export rows**. Normalization and machine-generated duplicate candidates produced **6,822 provisionally unique records**, of which **6,592** fall in the working 2015–2026 screening queue. These numbers are file-processing checkpoints, not final PRISMA flow numbers. The original files remain unchanged; the raw-export hashes are in [`../tracking/raw_export_manifest.csv`](../tracking/raw_export_manifest.csv).
+The current collected corpus comprises **56 raw export files** and **10,858 export rows**. Normalization and machine-generated duplicate candidates produced **6,822 provisionally unique records**, of which **6,592** fall in the working 2015–2026 screening queue. These numbers are file-processing checkpoints, not final PRISMA flow numbers. The original files remain unchanged; the raw-export hashes are in [`../tracking/raw_export_manifest.csv`](../tracking/raw_export_manifest.csv).
 
 Link each screened `record_id` to all contributing database/search IDs. Use exact DOI or stable database identifiers and normalized titles for **duplicate candidates**, but adjudicate ambiguous cases. Five same-title/different-DOI groups await manual decision. Connect multiple full-text `report_id` values to one `study_id` when they report the same study; do not collapse independent studies because titles resemble each other. Preserve pre- and post-update IDs with a crosswalk.
 

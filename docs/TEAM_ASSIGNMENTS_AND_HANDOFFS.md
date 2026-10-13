@@ -50,15 +50,25 @@ Use [rq_assignments.csv](../tracking/rq_assignments.csv) for separate existing-q
 2. **DATA -> REV1/REV2:** identical approved IDs/content, separate editable decision files, codebook/protocol version, input hash, training/calibration instructions and controlled location. Each receives their own packet.
 3. **REV1/REV2 -> ADJ/DATA:** locked original judgments and source-located codes. Compute pre-consensus reliability before discussion/adjudication; retain disagreements, rationale and recoding history.
 4. **ADJ/DATA -> four RQ leads:** agreed study registry and evidence links, report-to-study mapping, source locators, missingness, reliability results, approved codebook/schema and common analysis freeze. No unresolved scientific code silently enters an accepted analysis.
-5. **Each RQ lead -> integration:** RQ table/map, source-located narrative, script/command if applicable, input freeze/hashes/base commit, denominator definitions, limitations, cross-RQ join issues and recorded PR reviews. Use [HANDOFF_TEMPLATE.md](../analysis/HANDOFF_TEMPLATE.md).
+5. **Each RQ lead -> round-1 main/G6A -> fresh round-2 main/G6 -> fresh P7 integration:** RQ table/map, source-located narrative, script/command if applicable, input freeze/hashes/base commit, denominator definitions, limitations, cross-RQ join issues and recorded PR reviews. All four round-1 inventories and T34 establish G6A; all four final round-2 products and T39 establish G6 before P7 starts. Use [HANDOFF_TEMPLATE.md](../analysis/HANDOFF_TEMPLATE.md).
 6. **PI/integration -> final reporting:** accepted four-RQ products, joined framework, reconciled records/reports/studies, adjacent-review comparison, completed search/reporting checklists, approved amendments and verified claims.
 
 ## 5. First actions for 12 October
 
 - PI: name all roles, confirm reviewer budget/hours, and review the source-plan/4RQ decisions.
 - SEARCH: start T02-T06 and prepare T26; RQ leads inspect sentinel/keyword coverage and report proposed additions.
-- DATA: verify the local bundle and begin T07-T09 with ADJ/SEARCH; preserve source files and current manifests.
+- DATA: verify the source records and begin T07-T09 with ADJ/SEARCH; preserve source files and current manifests.
 - RQ leads: read their kits, propose extraction definitions/examples, and create planning issues. Analysis of eligible-study results waits for agreed extraction.
-- Repository maintainer: after the user's upload, create labels/issues/branches and apply the review process in the [GitHub guide](GITHUB_WORKFLOW.md). The local package does not create remote branches, issues, protections or assignments.
+- Repository maintainer: after the user's upload, create labels/issues/branches and apply the review process in the [GitHub guide](GITHUB_WORKFLOW.md). The coordination package does not create remote branches, issues, protections or assignments.
 
 After calibration, estimate screening time using observed throughput. At the existing planning assumption of 40 decisions/hour, 6,592 records imply about 165 hours per reviewer for title/abstract decisions alone; training, recovery, full texts, adjudication and extraction need additional time. Record available hours rather than committing to a finish date from keyword counts.
+
+## Phase checkpoint handoff
+
+Record phase ID, previous approved main checkpoint/commit, destination checkpoint, input version/hash and required phase reviews. Current routing follows the eight-phase guide: phase branches submit reviewed PRs to main; each next phase starts only after all required outputs and approvals establish the new checkpoint. P6 RQ products establish G6 before fresh P7 integration. Scientific decisions stay in controlled storage; a technical merge cannot approve them.
+
+See the [phase work guide](BRANCH_WORKFLOW_GUIDE.md) and complete the checkpoint record before promotion.
+
+## Two-round work allocation v0.5
+
+Each lead owns four work items in P6A and four in P6B. RQ1/RQ2 and RQ3/RQ4 cross-review in both rounds; DATA verifies input/ID/count integrity. PI owns T34 and T39 checkpoint records after all four RQ reviews. P6B uses fresh -r2 branches from G6A. [Detailed phase playbook](PHASE_EXECUTION_PLAYBOOK.md), [work items](../tracking/rq_round_workplan.csv) and [action log](../tracking/rq_review_actions.csv) define owners, output files and acceptance. Named assignments remain pending.

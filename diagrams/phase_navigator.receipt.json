@@ -1,0 +1,130 @@
+{
+  "artifact": "paper1_phase_navigator.html",
+  "artifact_sha256": "1563848213be99b02ef6f68db41eeec3dcad8ebb67c674eb130692f9b6cb2949",
+  "kind": "English navigation page referencing eight phase diagrams including current two-round P6",
+  "archify_render": false,
+  "source_tables": [
+    "../tracking/phase_merge_plan.csv",
+    "../tracking/branch_plan.csv"
+  ],
+  "phase_count": 8,
+  "branch_count": 26,
+  "generated_at": "2026-10-12",
+  "browser_review": "passed: eight phase selections, branch counts, preview loads, file links and no horizontal overflow at four desktop widths",
+  "embedded_artifact_receipts": [
+    "paper1_p1_branches.receipt.json",
+    "paper1_p2_branches.receipt.json",
+    "paper1_p3_branches.receipt.json",
+    "paper1_p4_branches.receipt.json",
+    "paper1_p5_branches.receipt.json",
+    "paper1_rq_rounds_workflow.receipt.json",
+    "paper1_p7_branches.receipt.json",
+    "paper1_p8_branches.receipt.json"
+  ],
+  "continuous_master_attempt": {
+    "status": "not delivered",
+    "correction_rounds": 2,
+    "diagnostic": "P4-to-P5 automatic route shared an unrelated corridor; bottom-channel and return-left presets failed readable-v2 constraints. Bounded repairs stopped; failed source retained outside the upload package."
+  },
+  "browser_phase_checks": [
+    {
+      "phase": "P1 | Baseline and protocol",
+      "branchRows": 3,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_p1_branches.html",
+        "paper1_p1_branches.json",
+        "paper1_p1_branches.receipt.json"
+      ]
+    },
+    {
+      "phase": "P2 | Training and calibration",
+      "branchRows": 2,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_p2_branches.html",
+        "paper1_p2_branches.json",
+        "paper1_p2_branches.receipt.json"
+      ]
+    },
+    {
+      "phase": "P3 | Title and abstract review",
+      "branchRows": 2,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_p3_branches.html",
+        "paper1_p3_branches.json",
+        "paper1_p3_branches.receipt.json"
+      ]
+    },
+    {
+      "phase": "P4 | Full texts and study linkage",
+      "branchRows": 3,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_p4_branches.html",
+        "paper1_p4_branches.json",
+        "paper1_p4_branches.receipt.json"
+      ]
+    },
+    {
+      "phase": "P5 | Evidence coding and freeze",
+      "branchRows": 2,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_p5_branches.html",
+        "paper1_p5_branches.json",
+        "paper1_p5_branches.receipt.json"
+      ]
+    },
+    {
+      "phase": "P6 | Two RQ rounds and evaluations",
+      "branchRows": 10,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_rq_rounds_workflow.html",
+        "paper1_rq_rounds_workflow.json",
+        "paper1_rq_rounds_workflow.receipt.json"
+      ]
+    },
+    {
+      "phase": "P7 | Synthesis and measurement framework",
+      "branchRows": 2,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_p7_branches.html",
+        "paper1_p7_branches.json",
+        "paper1_p7_branches.receipt.json"
+      ]
+    },
+    {
+      "phase": "P8 | Reporting and final release",
+      "branchRows": 2,
+      "selected": 1,
+      "imageLoaded": true,
+      "horizontalOverflow": false,
+      "links": [
+        "paper1_p8_branches.html",
+        "paper1_p8_branches.json",
+        "paper1_p8_branches.receipt.json"
+      ]
+    }
+  ],
+  "browser_scope": "Navigation-page checks; vertical page scrolling is expected. Archify viewer checks remain in the individual artifact receipts.",
+  "visual_review": "passed: updated 1440x1000 image reviewed; two-round diagram link, phase choices, current branch count and gate text readable",
+  "correction_rounds": 0
+}

@@ -1,0 +1,28 @@
+{
+  "diagram_type": "workflow",
+  "output": "paper1_p1_branches.html",
+  "specification": "paper1_p1_branches.json",
+  "specification_sha256": "fa8fc2b0c218de9c7f5ed70c6f167a15b4091b339af6ddb754bbcfdfa9f3cd01",
+  "artifact_sha256": "27d3df8f7e189d9587d49001995cb10aee28cf68da14c1a00c8e697f6f64001c",
+  "artifact_bytes": 803689,
+  "validation": "9/9 showcase, 0 errors, 0 warnings",
+  "browser_evidence": "passed",
+  "visual_review": "passed",
+  "correction_rounds": 0,
+  "visual_review_scope": [
+    "1440x900 light",
+    "2048x1320 dark"
+  ],
+  "observations": [
+    "Phase labels, owners, gate dependencies and cards readable; no clipping or unrelated route crossings"
+  ],
+  "automated_coverage": [
+    "1440x900 light",
+    "1600x1000 light",
+    "1920x1080 light",
+    "2048x1320 light",
+    "1440x900 dark capture",
+    "2048x1320 dark capture"
+  ],
+  "note": "Portable summary binds the exact source/HTML bytes; perceptual review is separate from automated browser evidence. Other interactive modes and exports were not independently exercised."
+}

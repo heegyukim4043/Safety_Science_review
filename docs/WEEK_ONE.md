@@ -7,7 +7,7 @@ This is a task sequence, not a claim that screening has begun. Named owners and 
 - [ ] PI: review the complete [`collection and eligibility criteria`](COLLECTION_AND_ELIGIBILITY_CRITERIA.md) and sign open items in [`collection_decisions.csv`](../tracking/collection_decisions.csv): PCC, publication window/cutoff, language, source types, HRC boundary, adjacent-review treatment, and adjudication.
 - [ ] PI: confirm funding/hours and enter names/GitHub handles for the search lead, data steward, two trained paid non-author reviewers, adjudication role, and four RQ leads in [`../tracking/assignments.csv`](../tracking/assignments.csv). Assign RQ1/RQ2 separately even if one person holds both roles. The source assigns unresolved adjudication to Nam/Staley; an additional separate person is optional.
 - [ ] PI: review the [source-plan comparison](SOURCE_PLAN_COMPARISON_AND_RQ_REVISION.md), approve four RQs with RQ3a/RQ3b fields, and freeze source reliability targets, field tiers, and AI limits in the protocol decisions.
-- [ ] Data steward: compare source-file hashes and counts to the local manifest; freeze the current 6,592-record queue as a provisional version. Do not overwrite local source exports or prior human decisions.
+- [ ] Data steward: compare source-file hashes and counts to the source manifest; freeze the current 6,592-record queue as a provisional version. Do not overwrite source exports or prior human decisions.
 - [ ] Search lead: open the exact-query [`search log`](../tracking/search_log.csv). Identify all 25 missing execution times and 23 missing on-screen counts. Log what can be verified from platform histories; leave unverifiable cells blank.
 
 ## Days 2–3: 13–14 October

@@ -26,7 +26,7 @@ Legacy RQ3 and RQ4 are combined as current RQ3, with **RQ3a pathway** and **RQ3b
 | Activity | Documented current state | Evidence / interpretation |
 |---|---|---|
 | Database file collection | Exports exist for 25 of 42 planned search rows from five accessible databases | [Exact search log](../tracking/search_log.csv); 17 rows have no exports |
-| Source preservation | 56 raw files inventoried and hashed; 90-file local survey snapshot preserved | [Raw manifest](../tracking/raw_export_manifest.csv), [local bundle](LOCAL_SURVEY_BUNDLE.md) |
+| Source preservation | 56 raw files inventoried and hashed | [Raw manifest](../tracking/raw_export_manifest.csv) |
 | Normalization and provisional duplicate grouping | 10,858 retrieval rows grouped into 6,822 provisional unique records | 4,036 retrieval rows provisionally grouped as repeats; ambiguous matches still require review |
 | Automated publication-year partition | 6,592 records fall within the working 2015-2026 queue; 230 provisional records are outside it | Queue preparation only; final period and online/print-year treatment remain unsigned |
 | Preliminary RQ routing | Four-RQ candidate counts derived from frozen legacy hints | [Readiness table](../tracking/rq_candidate_readiness.csv); no scientific RQ codes |
