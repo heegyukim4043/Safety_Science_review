@@ -1,9 +1,13 @@
 {
   "snapshot_date": "2026-10-12",
-  "local_snapshot_directory": "data/survey_2026-10-12",
-  "files": 90,
-  "bytes": 76621196,
   "raw_export_files": 56,
-  "data_tracked_by_git": false,
-  "human_screening_completed": false
+  "retrieval_rows": 10858,
+  "provisional_unique_records": 6822,
+  "working_year_queue": 6592,
+  "working_publication_years": "2015-2026",
+  "planned_searches": 42,
+  "searches_with_exports": 25,
+  "human_screening_completed": false,
+  "agreed_extraction_completed": false,
+  "source_data_included": false
 }

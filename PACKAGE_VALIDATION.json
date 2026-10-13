@@ -1,0 +1,41 @@
+{
+  "package_date": "2026-10-12",
+  "status": "passed",
+  "repository": "heegyukim4043/Safety_Science_review",
+  "content_files": 151,
+  "checklist": [
+    "English text and filenames",
+    "Markdown links and CSV shape",
+    "42 search rows / 25 exported / 56 source hashes",
+    "40 tasks / 26 branches / 32 RQ work items / 16 pending confirmation items",
+    "No source datasets backups Git metadata or machine-specific paths",
+    "Exact queries counts statuses and confirmation records preserved",
+    "Original generated diagram specifications and HTML hashes preserved",
+    "Preparation scripts parse and require explicit inputs"
+  ],
+  "verified_diagram_receipts": [
+    "paper1_p1_branches.receipt.json",
+    "paper1_p2_branches.receipt.json",
+    "paper1_p3_branches.receipt.json",
+    "paper1_p4_branches.receipt.json",
+    "paper1_p5_branches.receipt.json",
+    "paper1_p7_branches.receipt.json",
+    "paper1_p8_branches.receipt.json",
+    "paper1_rq_rounds_workflow.receipt.json",
+    "phase_navigator.receipt.json"
+  ],
+  "validator_output": [
+    "Upload candidate checked: 150 tracked/untracked candidate files; English-only text and paths",
+    "Collection criteria present; 42 search rows; 25 exported; 56 raw hashes",
+    "Four-RQ crosswalk/counts and independent calibration manifests verified",
+    "Four accountable RQ owners; S0-S8; 40 tasks with valid dependencies and branch/merge gates",
+    "Eight outer phase gates; 26 branches; G5 -> G6A -> G6 analytical rounds verified",
+    "32 RQ work items; T00-T39 dependencies and round-specific branch handoffs verified",
+    "Source data directory is absent from tracked files",
+    "Five methodology layers, phase/owner fields and evidence-backed completion fields verified",
+    "Four-part collaborator packet and 16 confirmation items verified; actual approvals require evidence"
+  ],
+  "scientific_approval": "pending",
+  "remote_upload_performed": false,
+  "manifest_scope": "All content except UPLOAD_MANIFEST.csv and PACKAGE_VALIDATION.json"
+}

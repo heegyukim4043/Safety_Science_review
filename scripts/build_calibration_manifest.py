@@ -19,7 +19,7 @@ FIELDS = ("record_id", "calibration_round", "position_in_round", "selection_rule
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--queue", type=Path)
+    parser.add_argument("--queue", type=Path, required=True)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--seed", type=int, default=20261012)
     parser.add_argument("--per-round", type=int, default=25)
@@ -32,7 +32,7 @@ def main() -> None:
     if args.per_round < 1 or args.first_round < 1:
         parser.error("Round number and per-round count must be positive")
     root = Path(__file__).resolve().parents[1]
-    queue = args.queue or root / "data/survey_2026-10-12/processed/screening_queue_2015_2026.csv"
+    queue = args.queue
     output = args.output or root / "tracking/calibration_record_ids.csv"
     if output.exists() and not args.overwrite:
         raise SystemExit("Output already exists. Use a new --output path; --overwrite is only for an unused manifest.")

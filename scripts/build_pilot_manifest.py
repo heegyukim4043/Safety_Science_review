@@ -1,4 +1,4 @@
-"""Select a reproducible, metadata-only mixed training pool from the local queue.
+"""Select a reproducible, metadata-only mixed training pool from an approved queue.
 
 This script does not judge eligibility or write reviewer decisions. Run it from
 the repository root or pass --queue explicitly after obtaining controlled data.
@@ -24,18 +24,9 @@ OUTPUT_FIELDS = (
 )
 
 
-def discover_queue(repo_root: Path) -> Path:
-    matches = list(repo_root.parent.glob("*/survey/processed/screening_queue_2015_2026.csv"))
-    if len(matches) != 1:
-        raise SystemExit(
-            "Pass --queue PATH: expected exactly one sibling survey screening queue."
-        )
-    return matches[0]
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--queue", type=Path, help="Frozen screening queue CSV")
+    parser.add_argument("--queue", type=Path, required=True, help="Frozen screening queue CSV")
     parser.add_argument(
         "--output", type=Path, default=Path("tracking/pilot_record_ids.csv")
     )
@@ -46,7 +37,7 @@ def main() -> None:
         parser.error("--per-cell must be positive")
 
     repo_root = Path(__file__).resolve().parents[1]
-    queue = args.queue or discover_queue(repo_root)
+    queue = args.queue
     source_hash = hashlib.sha256(queue.read_bytes()).hexdigest()
     with queue.open(encoding="utf-8-sig", newline="") as handle:
         records = list(csv.DictReader(handle))

@@ -18,11 +18,11 @@ FIELDS = (
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path)
+    parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
-    source = args.source or root / "data/survey_2026-10-12/organized/generated"
+    source = args.source
     output = args.output or root / "tracking/rq_candidate_readiness.csv"
     old = {}
     hashes = {}
