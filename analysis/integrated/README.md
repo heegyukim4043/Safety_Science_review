@@ -1,10 +1,10 @@
 # Integrated evidence map and manuscript
 
-**Status:** pending scientific extraction and four accepted RQ analyses. **Owner:** PI. **Branch:** `integration/evidence-map`. **Tasks:** T29 (framework with RQ2_LEAD), T31 (integration), T25/T32 (reporting/release).
+**Status:** pending scientific extraction and four accepted RQ analyses. **Owner:** PI. **Branch:** `integration/evidence-map`. **Phase:** P7, starting from accepted G6 main. **Tasks:** T31 (integration); T29 uses the separate phase-07/measurement-framework branch. P8 T25/T32 reporting/release uses fresh branches after G7.
 
 ## Inputs and intended outputs
 
-Use four accepted RQ PRs with the same agreed evidence freeze and baseline, source-located handoffs, reliability results and study/report registry. Join by study, exposure, measurement, outcome/window and control rather than matching labels alone.
+Use four accepted round-2 RQ PRs after T39/G6 with the same agreed evidence freeze and baseline, source-located handoffs, reliability results and study/report registry. Join by study, exposure, measurement, outcome/window and control rather than matching labels alone.
 
 Planned output files in this directory:
 
@@ -19,3 +19,7 @@ Planned output files in this directory:
 DATA confirms stable IDs, hashes, missingness, row multiplicity and unique-study denominators. All four leads review construct and interpretation joins; SEARCH reviews search reporting; ADJ resolves scientific coding disputes through a new approved freeze. PI approves the final integrated interpretation and release PR to `main`. Exact staged flow is in the [branch guide](../../docs/RESEARCH_STAGES_AND_BRANCHES.md).
 
 No final PRISMA diagram, numerical review findings or included-study table is populated in this starter package. Later Delphi/experimental designs remain separately labeled follow-on plans.
+
+## Current two-round input
+
+P6A inventories and G6A precede P6B final linked synthesis and G6. Integrate the accepted analysis/rq1/round2 through analysis/rq4/round2 products, with round-1 and review-action provenance retained. T29 depends on T39; final T31 depends on T39/T29 and approved reliability. [Phase playbook](../../docs/PHASE_EXECUTION_PLAYBOOK.md).

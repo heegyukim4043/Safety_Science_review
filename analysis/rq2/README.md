@@ -22,3 +22,9 @@ Existing-query terms: exposure; measur*; questionnaire; scale; log*; sensor*. Pr
 - `handoff.md`: input freeze, denominators, commands, cross-review and integration requirements using the [template](../HANDOFF_TEMPLATE.md).
 
 Verify scale/sample details against full texts. Do not treat reported scale validity as proof of OSH causation. RQ1 supplies construct definitions, RQ3 supplies response/support gaps, and RQ4 supplies modifiable controls; PI approves the integrated framework. Later Delphi/experiment variables are proposed, not validated by this review alone.
+
+## Current two-round work
+
+**Round 1:** T30, [round-1 kit](round1/README.md), source-linked inventory/descriptive evidence mapping; PR to main and midpoint G6A. **Round 2:** T36, [round-2 kit](round2/README.md), fresh `analysis/rq2-measurement-r2` branch from G6A, action resolution/linked synthesis/final verified claims; PR to main and second evaluation G6.
+
+[Detailed phase playbook](../../docs/PHASE_EXECUTION_PLAYBOOK.md) and [work items](../../tracking/rq_round_workplan.csv) govern the current outputs. Templates in the parent kit describe content; store round-specific products in the corresponding subdirectory. Canonical codes remain controlled.

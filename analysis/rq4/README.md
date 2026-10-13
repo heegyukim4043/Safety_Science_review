@@ -22,3 +22,9 @@ Existing-query terms: intervention*; redesign; participat*; consultation; transp
 - `handoff.md`: common freeze, distinct empirical/background denominators, sources and cross-review using the [template](../HANDOFF_TEMPLATE.md).
 
 Verify that a reported worker response is not described as reduced injury/illness without data. Cross-sectional associations alone do not demonstrate control effectiveness. PI and all RQ leads review follow-on allocation/override, dose-response and control experiments as later proposals.
+
+## Current two-round work
+
+**Round 1:** T24, [round-1 kit](round1/README.md), source-linked inventory/descriptive evidence mapping; PR to main and midpoint G6A. **Round 2:** T38, [round-2 kit](round2/README.md), fresh `analysis/rq4-controls-r2` branch from G6A, action resolution/linked synthesis/final verified claims; PR to main and second evaluation G6.
+
+[Detailed phase playbook](../../docs/PHASE_EXECUTION_PLAYBOOK.md) and [work items](../../tracking/rq_round_workplan.csv) govern the current outputs. Templates in the parent kit describe content; store round-specific products in the corresponding subdirectory. Canonical codes remain controlled.

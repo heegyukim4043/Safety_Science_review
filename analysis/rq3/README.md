@@ -22,3 +22,9 @@ Existing-query terms: stress; fatigue; workload; ergonom*; psychosocial risk; he
 - `handoff.md`: common freeze, source locations, unique-study versus estimate denominators and cross-review using the [template](../HANDOFF_TEMPLATE.md).
 
 Keep repeated measures/effects within their study. Do not sum pathway/outcome rows into unique-study counts. RQ3 inputs to RQ4 describe outcome support; prevention-effectiveness requires actual control evaluation. Any code change returns to ADJ/DATA before rerunning analysis.
+
+## Current two-round work
+
+**Round 1:** T23, [round-1 kit](round1/README.md), source-linked inventory/descriptive evidence mapping; PR to main and midpoint G6A. **Round 2:** T37, [round-2 kit](round2/README.md), fresh `analysis/rq3-pathways-outcomes-r2` branch from G6A, action resolution/linked synthesis/final verified claims; PR to main and second evaluation G6.
+
+[Detailed phase playbook](../../docs/PHASE_EXECUTION_PLAYBOOK.md) and [work items](../../tracking/rq_round_workplan.csv) govern the current outputs. Templates in the parent kit describe content; store round-specific products in the corresponding subdirectory. Canonical codes remain controlled.
